@@ -35,6 +35,7 @@ function init(self)
 	self.gui_pred = render.predicate({"gui"})
 	self.text_pred = render.predicate({"text"})
 	self.particle_pred = render.predicate({"particle"})
+	self.grade_pred = render.predicate({"grade"})
 
 	self.clear_color = vmath.vector4(0, 0, 0, 0)
 	self.clear_color.x = sys.get_config("render.clear_color_red", 0)
@@ -89,6 +90,10 @@ function update(self)
 	render.draw_debug3d()
 
 	render.set_render_target();
+
+	render.enable_texture(0, self.target, render.BUFFER_COLOR_BIT)
+	render.draw(self.grade_pred)
+	render.disable_texture(0, self.target)
 
 	-- render GUI
 	--

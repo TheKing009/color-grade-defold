@@ -1,12 +1,8 @@
-# Welcome to Defold
+# Color Grade Tutorial
 
-This project was created from the "empty" project template.
+This project implements a color grading full screen post effect. The basic rendering method used is widely applicable for various types of post effects like blur, trails, glow, color adjustments and so on. 
 
-The settings in ["game.project"](defold://open?path=/game.project) are all the default. A bootstrap empty ["main.collection"](defold://open?path=/main/main.collection) is included.
-
-Check out [the documentation pages](https://defold.com/learn) for examples, tutorials, manuals and API docs.
-
-If you run into trouble, help is available in [our forum](https://forum.defold.com).
+Made with [Defold](https://www.defold.com)
 
 Happy Defolding!
 
